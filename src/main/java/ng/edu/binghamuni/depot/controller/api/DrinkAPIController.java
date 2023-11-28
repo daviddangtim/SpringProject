@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 public class DrinkAPIController {
     @Autowired
@@ -18,6 +20,9 @@ public class DrinkAPIController {
     @Autowired
     DrinkService drinkService;
     @GetMapping("/drinks")
+    public ResponseEntity<List<Drink>> getAllDrinks(){
+        return ResponseEntity.ok().body(drinkService.getAllDrinks());
+    }
 
 
     @RequestMapping({"/drinks", "/drink/{id}"})
