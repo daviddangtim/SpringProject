@@ -1,4 +1,4 @@
-package ng.edu.binghamuni.depot;
+package com.inventory.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

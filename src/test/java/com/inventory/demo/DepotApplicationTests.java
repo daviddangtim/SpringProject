@@ -1,4 +1,4 @@
-package ng.edu.binghamuni.depot;
+package com.inventory.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
