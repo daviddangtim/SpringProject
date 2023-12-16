@@ -4,18 +4,18 @@
 <head th:replace="~{fragments/fragments :: head}"></head>
 
 <body>
-<h1>
-  [[ ${pageTitle} ]]
-</h1>
+<h1>Update Drink</h1>
+
 <!-- back home button -->
 <div class="container mt-3">
   <a th:href="@{/}" class="btn btn-primary btn-sm">Back Home</a>
 </div>
 
 <!-- add drink Form -->
-<form th:action="@{/saveDrink}" th:method="post" th:object="${drink}" class="container mt-3">
+<form th:action="@{/updateDrink}" th:method="post" th:object="${drink}" class="container mt-3">
 
   <div class="border p-3">
+    <input type="hidden" th:field="*{id}">
     <div class="form-group row">
       <label th:for="DrinkName" class="col-sm-4 col-form-label required">Drink Name</label>
       <div class="col-sm-8">
